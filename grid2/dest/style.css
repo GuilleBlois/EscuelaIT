@@ -1,7 +1,7 @@
 .grid-item {
     padding: 20px;
     border-radius: 1rem;
-    color: #000;
+    color: #fff;
     font-size: 2rem;
     font-weight: 600;
     border: 1px solid #000;
@@ -10,11 +10,10 @@
     align-items: center;
 }
 .grid-item:nth-child(2n+1) {
-    background-color: #333;
-    color: #fff;
+    background-color: rgb(133, 7, 7);
 }
 .grid-item:nth-child(2n) {
-    background-color: yellow;
+    background-color: rgb(11, 9, 102);
 }
 /*.grid {
     display: grid;
