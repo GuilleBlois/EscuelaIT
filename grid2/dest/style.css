@@ -1,0 +1,27 @@
+.grid-item {
+    padding: 20px;
+    border-radius: 1rem;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item:nth-child(2n+1) {
+    background-color: #333;
+    color: #fff;
+}
+.grid-item:nth-child(2n) {
+    background-color: yellow;
+}
+.grid {
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(100px, 1fr)) repeat(auto-fill, minmax(200px, 1fr)); */
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    /* Que maravilla */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) 100px);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+}
