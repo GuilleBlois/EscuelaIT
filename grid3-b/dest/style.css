@@ -1,0 +1,21 @@
+body {
+    background-color: rgba(0,0,0,0.1);
+    font: 1.2rem sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+.grid{
+    display:grid;
+    grid-template-columns: [start] minmax(200px, 20%) [main] 1fr [end];
+    grid-template-rows: [start] minmax(4rem, auto) [main] 500px [footer] minmax(4rem, auto) [footer];
+    padding: 1rem;
+    grid-gap: .5rem;
+}
+.grid-item {
+    padding: 1rem 2rem;
+    background-color: #639;
+    border-radius: .3rem;
+}
+.header, footer {
+    grid-column: start/end;
+}
