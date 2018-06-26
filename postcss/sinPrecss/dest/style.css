@@ -1,0 +1,13 @@
+.prueba {
+    color: pink;
+}
+/* Con cssnano esto desaparece */
+.vacio {
+    
+}
+.postcss {
+    background: pink;
+    width: 800px;
+    -webkit-transform: scale(4);
+            transform: scale(4);
+}

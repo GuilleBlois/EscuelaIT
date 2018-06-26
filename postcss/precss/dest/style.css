@@ -1,0 +1,96 @@
+/* variable custom properties */
+:root {
+    --color2: red;
+}
+/*variable sass*/
+/* Mixin */
+/* Mixin nuevo - no me funciona */
+@define-mixin prueba2 {
+    .sass-custom {
+        background-color: red;
+        background-color: var(--color2)
+    }
+    .sass-custom:hover {
+        background: black;
+    }
+    .sass-custom .child {
+            background: white;
+    }
+            .sass-custom .child .nieto {
+                background: pink;
+            }
+}
+
+.sass {
+    background-color: pink;
+}
+
+.sass-custom {
+    background-color: red;
+    background-color: var(--color2)
+}
+
+.sass-custom:hover {
+    background: black;
+}
+
+.sass-custom .child {
+        background: white;
+}
+
+.sass-custom .child .nieto {
+            background: pink;
+        }
+
+/* Mixin */
+
+.probando .sass-custom {
+        background-color: red;
+        background-color: var(--color2)
+    }
+
+.probando .sass-custom:hover {
+    background: black;
+}
+
+.probando .sass-custom .child {
+            background: white;
+}
+
+.probando .sass-custom .child .nieto {
+                background: pink;
+            }
+
+/* Nuevo mixin - Este no me funciona */
+
+.probando {
+}
+
+/* Fin nuevo mixin */
+
+/* Condicionales */
+.notice-clear {
+        background: blue
+}
+/* Loops */
+.b-1 { width: 1px; }
+.b-2 { width: 2px; }
+.b-3 { width: 3px; }
+
+.icon-foo {
+        background:url('loquesea/foo.png');
+    }
+
+.icon-bar {
+        background:url('loquesea/bar.png');
+    }
+
+.icon-baz {
+        background:url('loquesea/baz.png');
+    }
+
+/* Lookup */
+.heading {
+    margin: 20px;
+    padding: 20px;
+}

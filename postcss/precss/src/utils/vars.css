@@ -1,0 +1,6 @@
+/* variable custom properties */
+:root {
+    --color2: red;
+}
+/*variable sass*/
+$color:pink;

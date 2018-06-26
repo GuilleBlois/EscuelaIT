@@ -1,0 +1,41 @@
+/*autoprefixer*/
+.container {
+    transform: rotate(20deg);
+    display: flex;
+    background-color: #fff;
+}
+/*custom prop*/
+:root {
+	--color:#333;
+}
+
+.circle{
+	background: var(--color);
+}
+
+/*sass*/
+$w:300px;
+
+.circle {
+	width: $w;
+}
+
+@mixin prueba{
+	background-color: #333;
+	width: 40px;
+}
+
+.clase {
+	@include prueba;
+}
+
+/* Otra sintaxis de mixin */
+/*
+@define-mixin prueba{
+	background-color: #333;
+	width: 40px;
+}
+
+.clase {
+	@mixin prueba;
+}*/

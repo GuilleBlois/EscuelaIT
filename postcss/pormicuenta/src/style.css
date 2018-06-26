@@ -1,0 +1,6 @@
+@import "util/vars";
+
+.hola {
+    color: $color;
+    column-count: 4;
+}

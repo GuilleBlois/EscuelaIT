@@ -1,0 +1,15 @@
+@import "util/vars";
+@import "util/mixins";
+
+.prueba {
+    color: $color;
+}
+
+/* Con cssnano esto desaparece */
+.vacio {
+    
+}
+
+.postcss {
+    @mixin mPrueba 800px, 4;
+}

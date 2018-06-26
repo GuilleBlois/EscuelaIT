@@ -1,0 +1,30 @@
+/* Mixin */
+@mixin prueba {
+    .sass-custom {
+        background-color: var(--color2);
+        &:hover {
+            background: black;
+        }
+        .child {
+            background: white;
+            .nieto {
+                background: $color;
+            }
+        }
+    }
+}
+/* Mixin nuevo - no me funciona */
+@define-mixin prueba2 {
+    .sass-custom {
+        background-color: var(--color2);
+        &:hover {
+            background: black;
+        }
+        .child {
+            background: white;
+            .nieto {
+                background: $color;
+            }
+        }
+    }
+}

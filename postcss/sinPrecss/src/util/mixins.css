@@ -1,0 +1,5 @@
+@define-mixin mPrueba $vars, $scale {
+    background: $color;
+    width: $vars;
+    transform: scale($scale);
+}

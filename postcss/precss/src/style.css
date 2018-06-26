@@ -1,0 +1,60 @@
+
+@import "utils/vars";
+@import "utils/mixin";
+
+.sass {
+    background-color: $color;
+}
+
+.sass-custom {
+    background-color: var(--color2);
+    &:hover {
+        background: black;
+    }
+    .child {
+        background: white;
+        .nieto {
+            background: $color;
+        }
+    }
+}
+
+/* Mixin */
+
+.probando {
+    @include prueba;
+}
+
+/* Nuevo mixin - Este no me funciona */
+
+.probando {
+    @mixin prueba;
+}
+
+/* Fin nuevo mixin */
+
+/* Condicionales */
+.notice-clear {
+    @if 7 < 5 {
+        background-color: green;
+    }
+    @else {
+        background: blue;
+    }
+}
+/* Loops */
+@for $i from 1 to 3 {
+    .b-$i { width: $(i)px; }
+}
+
+@each $icon in (foo, bar, baz) {
+    .icon-$(icon) {
+        background:url('loquesea/$(icon).png');
+    }
+}
+
+/* Lookup */
+.heading {
+    margin: 20px;
+    padding: @margin;
+}

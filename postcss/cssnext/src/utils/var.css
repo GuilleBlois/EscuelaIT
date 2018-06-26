@@ -1,0 +1,8 @@
+:root {
+    --fontSize: 1rem;
+    --mainColor: #12345678;
+    --highlightColor: hwb(190,35%,20%);
+}
+
+@custom-selector :--button button, .button, div, .ejemplo, #otro ;
+@custom-selector :--enter :hover, :focus;

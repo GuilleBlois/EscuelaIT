@@ -1,0 +1,51 @@
+/* some var() & calc() */
+
+body {
+color: rgba(18, 52, 86, 0.47059);
+font-size: 16px;
+font-size: 1rem;
+line-height: 24px;
+line-height: 1.5rem;
+padding: calc(0.5rem + 1px);
+}
+
+.link:link,.link:visited {
+    color: rgba(20, 37, 54, 0.59608);
+}
+
+button,
+.button,
+div,
+.ejemplo,
+#otro {
+    background-color: rgba(18, 52, 86, 0.47059);
+}
+
+button:hover,
+.button:hover,
+div:hover,
+.ejemplo:hover,
+#otro:hover,
+button:focus,
+.button:focus,
+div:focus,
+.ejemplo:focus,
+#otro:focus {
+    background-color: rgba(18, 52, 86, 0.47059);
+}
+
+.blur {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter');
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+}
+
+.sepia {
+    -webkit-filter: blur(.8);
+            filter: blur(.8);
+}
+
+.sepia:hover,
+.sepia:focus {
+    color: rgba(135, 101, 67, 0.12941);
+}
