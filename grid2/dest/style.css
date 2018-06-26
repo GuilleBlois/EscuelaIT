@@ -10,10 +10,10 @@
     align-items: center;
 }
 .grid-item:nth-child(2n+1) {
-    background-color: rgb(133, 7, 7);
+    background-color: rgb(0, 0, 0);
 }
 .grid-item:nth-child(2n) {
-    background-color: rgb(11, 9, 102);
+    background-color: rgb(2, 0, 105);
 }
 /*.grid {
     display: grid;
