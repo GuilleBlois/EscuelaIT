@@ -8,12 +8,30 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
-.grid {
+/* Parte 1 */
+/* .grid {
     display: grid;
     min-height:  100vh;
-}
+    grid-template-rows: repeat(2, 4rem) 1fr repeat(2, 4rem);
+} */
+/* Parte 2 */
+/* .grid {
+    display: grid;
+    min-height:  100vh;
+    grid-gap: .5rem;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 4rem 1fr 4rem;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+} */
+/* Parte 3 */
+
+
+
 .grid-item {
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
 }
 .header {
     background-color: blueviolet;
@@ -30,3 +48,78 @@ body {
 .footer {
     background-color: seagreen;
 }
+.gap {
+    background-color: brown;
+    opacity: 0.4;
+}
+/* Parte 2 */
+/* .header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+.gap {
+    grid-row: header-end/footer-start;
+    grid-column: sidebar-start/main-end;
+} */
+/* Al definir areas se crean nombres de liens automaticamente */
+
+/* Parte 1 */
+/* @media screen and (min-width: 650px){
+    .grid {
+        grid-template-rows: 4rem 1fr repeat(2, 4rem);
+        grid-template-areas:
+            "header header"
+            "nav main"
+            "sidebar sidebar"
+            "footer footer";
+            grid-template-columns: minmax(200px, 15%) 1fr;
+    }
+    .header {
+        grid-area: header;
+    }
+    .nav {
+        grid-area: nav;
+    }
+    .main {
+        grid-area: main;
+    }
+    .sidebar {
+        grid-area: sidebar;
+    }
+    .footer {
+        grid-area: footer;
+    }
+}
+@media screen and (min-width: 850px){
+    .grid {
+        grid-template-rows: 4rem 1fr 4rem;
+        grid-template-columns: minmax(200px, 15%) 1fr minmax(200px, 15%);
+        grid-template-areas:
+            "header header header"
+            "nav main sidebar"
+            "footer footer footer";
+    }
+    .header {
+        grid-area: header;
+    }
+    .nav {
+        grid-area: nav;
+    }
+    .main {
+        grid-area: main;
+    }
+    .sidebar {
+        grid-area: sidebar;
+    }
+    .footer {
+        grid-area: footer;
+    }
+} */
