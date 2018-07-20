@@ -1,0 +1,32 @@
+body {
+    background-color: rgba(0,0,0,0.1);
+    font: 1.1rem sans-serif;
+    color: white;
+}
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.grid {
+    display: grid;
+    min-height:  100vh;
+}
+.grid-item {
+    padding: 1rem 2rem;
+}
+.header {
+    background-color: blueviolet;
+}
+.nav {
+    background-color: black;
+}
+.main {
+    background-color: rosybrown;
+}
+.sidebar {
+    background-color: gray;
+}
+.footer {
+    background-color: seagreen;
+}
