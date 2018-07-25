@@ -28,12 +28,36 @@ body {
 } */
 /* Parte 3 */
 
-
+.grid {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(4, minmax(5rem, 1fr));
+    grid-template-rows: repeat(4, minmax(6rem, 1fr));
+    border: 5px solid #000;
+}
 
 .grid-item {
     padding: 0rem 2rem;
+    background-color: blueviolet;
 }
-.header {
+.item1, .item2 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.item3 {
+    grid-row: 3/span 2;
+}
+.item4 {
+    grid-row: 3/span 2;
+    grid-column: span 2;
+}
+.grid {
+    justify-items: start;
+    justify-items: end;
+    justify-items: center;
+    
+}
+/* .header {
     background-color: blueviolet;
 }
 .nav {
@@ -51,7 +75,7 @@ body {
 .gap {
     background-color: brown;
     opacity: 0.4;
-}
+} */
 /* Parte 2 */
 /* .header {
     grid-area: header;
